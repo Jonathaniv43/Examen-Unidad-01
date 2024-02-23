@@ -32,7 +32,7 @@ do{
     planilla.infop = planilla.sueldo*0.015;
 
     op = parseInt(prompt('Desea Continuar'));
-    datos.push(planilla1)
+    datos.push(planilla)
 } while (op === 1);
 
 
@@ -41,12 +41,12 @@ console.log(`${numeroPlanilla} \n ${nombreEmpresa}`);
 console.log(`Nombre\t Sueldo Base\t IHH\t INFOP\t Adelanto Saldo \t Prestamo`);
 for (let j = 0; j < datos.length; j++) {
     
-    const {nombre} = planilla
-    const {sueldo} = planilla
-    const {adelanto} = planilla
-    const {prestamo} = planilla
-    const {ihss} = planilla
-    const {infop} = planilla
+    let {nombre} = planilla
+    let {sueldo} = planilla
+    let {adelanto} = planilla
+    let {prestamo} = planilla
+    let {ihss} = planilla
+    let {infop} = planilla
     console.log(`${nombre}\t\t ${sueldo} \t${adelanto}\t ${prestamo}\t ${ihss}\t ${infop}`);
 }
 
